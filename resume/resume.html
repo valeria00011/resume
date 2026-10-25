@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моя страница</title>
+  <style>
+    * {
+       box-sizing: border-box; 
+      }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #e2ecff;
+      font-size: 14px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .site-header {
+      background: #0757b8;
+      color: #fff;
+      min-height: 58px;
+      padding: 20px 24px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      gap: 10px;
+    }
+    .name {
+      font-size: 18px;
+      font-weight: 600px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    main {
+      width: 90%;
+      max-width: 900px;
+      margin: 26px auto 30px;
+      display: grid;
+      grid-template-columns: 190px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+      flex: 1;
+    }
+    .photo {
+      width: 300px;
+      height: 350px;
+      padding: 0;
+      overflow: hidden;
+      border: 3px solid #1680ff;
+      border-radius: 15px;
+      background: #fff;
+      display: flex;
+      justify-content:  center;
+      color: #555;
+      line-height: 1;
+      margin-left: -100px;
+      margin-bottom: 20px;
+      }
+      .photo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 13px;
+        display: block;
+      }
+    h1 {
+      font-size: 24px; 
+      margin: 0 0 10px; 
+      color: #202020; 
+    }
+    h2 { 
+      font-size: 16px; 
+      margin: 0 0 8px; 
+    }
+    p { 
+      line-height: 1.55; 
+      margin: 0 0 12px; 
+    }
+    section { 
+      margin-bottom: 22px; 
+    }
+    .skills { 
+      display: flex; 
+      gap: 8px; 
+      flex-wrap: wrap; 
+    }
+    .skill {
+      background: #e7f0ff;
+      color: #0757b8;
+      border: 1px solid #c5dcff;
+      border-radius: 3px;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+    .contacts p { 
+      margin-bottom: 6px; 
+    }
+    footer {
+      background: #0757b8;
+      color: #fff;
+      text-align: center;
+      padding: 20px 30px;
+      font-size: 13px;
+    }
+
+    .age{
+      color: #4a4a4a;
+      font-size: 16px;;
+    }
+
+    .a{
+      border: 2px solid blue;
+      border-radius: 15px;
+      width: 300px;
+      height: 150px;
+      margin-left: -100px;
+      padding: 5px;
+    }
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="name">Резюме</div>
+  </header>
+
+  <main>
+    <aside>
+      <div class="photo"><img src="photo_5316725439059405014_y.jpg" alt="Моя фотография"></div>
+      <div class="a">
+        <section>
+          <h2 style="padding-left: 80px;">Достижения</h2>
+          <ul>
+          <li>Активно участвую в жизни колледжа - участник Студенческого Совета</li>
+          <li>Стремлюсь к красному диплому</li>
+          <li>Реализовываю идею создания своих онлайн-курсов</li>
+          </ul>
+        </section>
+      </div>
+    </aside>
+
+    <div class="content">
+      <section id="about">
+        <h1>Смирнова Валерия Вячеславовна</h1>
+        <section class="age">06.12.2009<br>г. Санкт-Петербург</section>
+        <h2>Обо мне</h2>
+        <p>Я студентка колледжа судостроения, информационных и прикладных технологий (КСИПТ), учусь на втором курсе, изучаю Python, HTML, CSS, JavaScript и PHP, развиваю навыки работы с компьютером и пробую новые проекты.</p>
+        <p>Я творческий и инициативный человек, которому нравится находить нестандартные решения, анализировать проблемы и воплощать собственные идеи в жизнь. Отличаюсь ответственностью, целеустремлённостью и настойчивостью в достижении поставленных целей. Быстро осваиваю новые знания, умею адаптироваться к изменяющимся условиям и с интересом берусь за незнакомые задачи.</p>
+        <p>Мне важно не просто изучать новое, но и применять полученные знания на практике, создавая собственные проекты. Сейчас я работаю над идеей онлайн-школы для начинающих программистов, разрабатывая обучающие материалы на основе собственного опыта изучения программирования. Мне интересно находить решения, которые делают сложные вещи понятнее, и создавать продукты, способные приносить реальную пользу людям.</p>
+        <p>Я стремлюсь постоянно развиваться, самостоятельно искать возможности для роста и доводить начатое до результата. Люблю нестандартные задачи, умею искать разные подходы к их решению и рассматриваю трудности как возможность получить новый опыт и улучшить свои навыки.</p>
+        
+      </section>
+
+      <section id="skills">
+        <h2>Навыки</h2>
+        <div class="skills">
+          <span class="skill">Python</span>
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">PHP</span>
+        </div>
+      </section>
+
+      <section id="proects">
+        <h2>Проекты</h2>
+        <p>Мои завершенные проекты можно посмотреть на GitHub <a href="https://github.com/valeria00011/resume">https://github.com/valeria00011/resume</a></p>
+
+      </section>
+
+      <section id="contacts" class="contacts">
+        <h2>Контакты</h2>
+        <p>Email: valeria12303@mail.ru</p>
+        <p>Мобильный телефон: +7 (981) 853-98-63</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>© 2026 Смирнова Валерия Вячеславовна</footer>
+
+</body>
+</html>
