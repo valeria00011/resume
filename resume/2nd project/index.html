@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Orb</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <header class="interface">
+            <div class="logo"><span>〇</span>HUNGRY BALL<span>〇</span></div>
+            <div class="counter">ПОГЛОЩЕНО: <span id="count">0</span></div>
+            <button id="restart">НАЧАТЬ ЗАНОВО ↻</button>
+        </header>
+
+        <div class="intro">
+            <p>МИНИ-ИГРА</p>
+            <h1>СЪЕШЬ <br>ВСЮ СТРАНИЦУ</h1>
+            <p class="hint">ВКУСНЫЕ СЛОВА ММММММ</p>
+        </div>
+
+        <canvas id="world"></canvas>
+
+        <div class="bottom-note">
+            <span>УПРАВЛЕНИЕ: ← ↑ → ↓ / курсором мыши</span>
+            <span id="status">ОБЪЕКТ ПРОБУЖДАЕТСЯ...</span>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
